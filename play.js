@@ -8,6 +8,8 @@ const server = http.createServer((req, res)=> {
   const method = req.method;
   if(url === '/'){
     fs.readFile("message.txt", { encoding: "utf-8"}, (err, data) =>{
+      console.log(hi);
+      
       if(err){
         console.log(err)
       }
