@@ -71,6 +71,7 @@ exports.postEditProduct = (req, res, next) => {
     .catch(err => console.log(err));
 };
 
+
 exports.getProducts = (req, res, next) => {
   Product.fetchAll()
     .then(products => {
